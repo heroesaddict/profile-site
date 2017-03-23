@@ -140,14 +140,12 @@ header {
 }
 
 #logo {
-	line-height: 1.5;
 	padding: 15px 0 0 0;
 }
 
 p span {
 	color: #fff;
 	font-size: 1.5em;
-	line-height: 1.5;
 	border: 2px solid #fff;
 	padding: 0 5px;
 	border-radius: 25px;	
@@ -336,7 +334,6 @@ label {
 .footer {
 	color: #fff;
 	background: #1784bd;
-	margin-top: 50px;
 }
 
 #footer h3{
@@ -506,14 +503,14 @@ ul.social-icons {
 	
 }
 
-ul.list-inline li a{
+.list-inline li a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 1.125em;
 	padding: 5px;
 }
 
-ul.list-inline li a:hover, ul.list-inline li a:active {
+.list-inline li a:hover, .list-inline li a:active {
 	background-color: #fff;
 	color: #126390;
 }
@@ -535,17 +532,19 @@ ul.list-inline li a:hover, ul.list-inline li a:active {
 		float: none;
 		box-sizing: border-box;
 		margin: 0 0 20px 0;
+		padding: 0 5px;
 	}
 
-	.container {
-		width: 700px;
-	}
+	
 }	
 
 
 /*Responsive
 -----------------------------------------*/
 @media screen and (min-width: 768px) {
+	.container {
+		width: 700px;
+	}
 	
 }
 
@@ -559,23 +558,110 @@ ul.list-inline li a:hover, ul.list-inline li a:active {
 
 	.span4 {
 	width: 33.3333333333%;
+	text-align: center;
+	}
+
+	.services .span4 {
+	width: calc(33.3333333333% - 20px);
+	margin-right: 20px;
+	padding: 20px;
+	border: 2px solid #1784bd;
+	border-radius: 25px;
+	
 	}
 
 	.container {
 		width: 970px;
+		padding: 0 20px;
 	}
 
-	/*p {
-		font-size: 1.1875rem;
-		line-height: 1.9375;
-	}*/
+	.clear {
+		clear: both;
+	}
+
+	.m_btn span{
+	display:none;
+	margin:7px 0;
+	}
+
+	#nav {
+	display: inline-block;
+	}
+
+	#logo {
+		display: inline-block;
+	}
+
+	#nav {
+    	float: right;
+    	margin-top: 18px;
+    }
+
+	li {
+		float: left;
+
+	}
+
+	#nav li a {
+    padding: 30px 10px;
+    font-size: 1em;
+    }
+
+    #nav li a:hover {
+	background-color:#1784bd;
+	}
+
+	#nav li:hover {
+		background-color:transparent;
+	}
+
+	.services p {
+		font-size: .8em;
+	}
+
+	.services h3 {
+		font-size: 1.35em;
+	}
+
+	#contact-area {
+    width: 75%;
+    margin-top: 60px;
 }
 
-@media screen and (min-width: 1200px) {
+	.footer li {
+		text-align: center;
+	}
 
+	.footer h1 {
+		font-size: 1.5em;
+	}
+
+	.footer h3 {
+		font-size: 1.1em;
+	}
+
+	.list-inline li{
+		display: block;
+		margin: 0;
+	}
+
+	.list-inline {
+  		margin: 10px 0 0 30px;
+	}
+	
+	#copyright {
+		float: left;
+		margin: 10px 0 0 30px;
+	}
+
+
+
+}
+@media screen and (min-width: 1200px) {
+/*
 	.container {
 		width: 1173px;
-	}
+	}*/
 }
 	
 
